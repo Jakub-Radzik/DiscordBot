@@ -1,0 +1,22 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "DiscordBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radzikoska123/DiscordBot.git"
+  },
+  "author": "Jakub Radzik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radzikoska123/DiscordBot/issues"
+  },
+  "homepage": "https://github.com/radzikoska123/DiscordBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
