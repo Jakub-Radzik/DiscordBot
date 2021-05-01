@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +38,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.43" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jakub\Desktop\DiscordBot\images" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.index.js">
     <configuration name="BotKey.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BotKey.js" working-dir="$PROJECT_DIR$">
@@ -48,6 +61,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.BotKey.js" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.BotKey.js" />
       </list>
@@ -62,6 +77,9 @@
       <option name="presentableId" value="Default" />
       <updated>1619702251508</updated>
       <workItem from="1619702255786" duration="1074000" />
+      <workItem from="1619787459747" duration="704000" />
+      <workItem from="1619803202949" duration="743000" />
+      <workItem from="1619900935284" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1619702548466</created>
@@ -77,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619702836615</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hello Bot">
+      <created>1619703555502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619703555502</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,10 +118,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
     <MESSAGE value="Git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git ignore" />
+    <MESSAGE value="Hello Bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hello Bot" />
   </component>
 </project>
