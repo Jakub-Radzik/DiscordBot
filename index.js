@@ -1,10 +1,13 @@
 const Discord = require('discord.js');
 const {TOKEN} = require('./BotKey');
 
+const prefix = ';';
+
 /**
  * Functionalities
  */
 const {welcome} = require('./Functionality/welcome')
+const {createChannel} = require('./Functionality/createChannel')
 
 //CREATE A NEW DISCORD CLIENT
 const client = new Discord.Client();
@@ -14,7 +17,7 @@ let Guilds;
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     Guilds = client.guilds.cache.map(guild => guild);
-    console.log(Guilds);
+    // console.log(Guilds);
 });
 
 client.on("guildCreate", guild => {
@@ -31,37 +34,33 @@ client.on("guildCreate", guild => {
 //BOT RESPONSES ON MESSAGES
 client.on('message', msg => {
 
-    if (msg.content === 'ping') {
+    /**
+     * BOT TEST
+     */
+    if (msg.content === `${prefix}ping`) {
         msg.reply('Pong!');
     }
-    //create new voice channel
-    if (msg.content.startsWith('create new voice')) {
-        let splitmsg = msg.content.split(' ');
-        let newVoiceChannelName = '';
-        for (let i = 3; i < splitmsg.length; i++) {
-            newVoiceChannelName+=`${splitmsg[i]} `;
-        }
-        newVoiceChannelName.trim();
-        console.log(newVoiceChannelName)
-        msg.guild.channels.create(newVoiceChannelName, {
-            type: "voice",
-            permissionOverwrites: [
-                {
-                    id: msg.guild.roles.everyone,
-                    allow: ['VIEW_CHANNEL', 'SEND_MESSAGES', 'READ_MESSAGE_HISTORY'],
-                    deny: ['VIEW_CHANNEL', 'SEND_MESSAGES', 'READ_MESSAGE_HISTORY']
-                }
-            ],
-        })
+
+    /**
+     * Welcome card
+     */
+    if(msg.content === `${prefix}welcome`){
+        welcome(msg.channel);
     }
+
+    /**
+     * Create new voice/text channel
+     */
+    if (msg.content.startsWith(`${prefix}create`)) {
+        createChannel(msg);
+    }
+
     //help - link to website
     //disconnect user from channel
     //ban user
     //kick user
     //send info about user
-    if(msg.content === 'welcome'){
-        welcome(msg.channel);
-    }
+
 
     if (msg.content.startsWith("kick")) {
         let user = msg.mentions.members.first();
