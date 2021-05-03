@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="Information about bot card, send on command and guild join">
+    <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="Creating voice/text channels and categories, also more than one channel using one command">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/welcome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -79,7 +81,7 @@
       <workItem from="1619787459747" duration="704000" />
       <workItem from="1619803202949" duration="743000" />
       <workItem from="1619900935284" duration="4126000" />
-      <workItem from="1620032140914" duration="2911000" />
+      <workItem from="1620032140914" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1619702548466</created>
@@ -109,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619904971416</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Creating voice/text channels and categories, also more than one channel using one command">
+      <created>1620035145686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620035145686</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +141,7 @@
     <MESSAGE value="Git ignore" />
     <MESSAGE value="Hello Bot" />
     <MESSAGE value="Information about bot card, send on command and guild join" />
-    <option name="LAST_COMMIT_MESSAGE" value="Information about bot card, send on command and guild join" />
+    <MESSAGE value="Creating voice/text channels and categories, also more than one channel using one command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating voice/text channels and categories, also more than one channel using one command" />
   </component>
 </project>

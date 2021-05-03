@@ -2,10 +2,10 @@ const Discord = require("discord.js");
 const {name, version} = require('../package.json');
 
 /**
- * Embed Discord.JS Card sending on guild join
+ * Embed Discord.JS Help Card
  * @type {module:"discord.js".MessageEmbed}
  */
-const exampleEmbed = new Discord.MessageEmbed()
+const welcomeEmbed = new Discord.MessageEmbed()
     .setColor('#ffff00')
     .setTitle(`${name} ${version}`)
     // .setURL('https://discord.js.org/')
@@ -25,7 +25,7 @@ const exampleEmbed = new Discord.MessageEmbed()
     .setFooter('Buy me a beer');
 
 function welcome(channel){
-    channel.send(exampleEmbed);
+    channel.send(welcomeEmbed);
 }
 
 module.exports = {welcome}

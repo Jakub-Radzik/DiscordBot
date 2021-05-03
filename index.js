@@ -1,13 +1,12 @@
 const Discord = require('discord.js');
-const {TOKEN} = require('./BotKey');
-
-const prefix = ';';
+const {TOKEN, prefix} = require('./BotKey');
 
 /**
  * Functionalities
  */
 const {welcome} = require('./Functionality/welcome')
 const {createChannel} = require('./Functionality/createChannel')
+const {help} = require('./Functionality/help')
 
 //CREATE A NEW DISCORD CLIENT
 const client = new Discord.Client();
@@ -42,6 +41,13 @@ client.on('message', msg => {
     }
 
     /**
+     * Help card
+     */
+    if(msg.content === `${prefix}help`){
+        help(msg);
+    }
+
+    /**
      * Welcome card
      */
     if(msg.content === `${prefix}welcome`){
@@ -60,7 +66,6 @@ client.on('message', msg => {
     //ban user
     //kick user
     //send info about user
-
 
     if (msg.content.startsWith("kick")) {
         let user = msg.mentions.members.first();
@@ -110,7 +115,7 @@ client.on('message', msg => {
     }
 
     //meme api
-    //joke -move user around channels
+    //joke -move user around voice channels
     if (msg.content.startsWith("kicker")) {
         const user = msg.mentions.members.first();
         let voiceChannels = msg.guild.channels.cache.filter(c => c.type === 'voice');
@@ -122,12 +127,6 @@ client.on('message', msg => {
             },100))
         }
     }
-    console.log("end")
-
-
-
-
-
 });
 
 //LOGIN CLIENT USING TOKEN
