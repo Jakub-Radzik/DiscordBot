@@ -1,12 +1,15 @@
 const Discord = require('discord.js');
-const {TOKEN, prefix} = require('./BotKey');
+const {TOKEN, prefix} = require('./Environment');
 
 /**
  * Functionalities
  */
 const {welcome} = require('./Functionality/welcome')
-const {createChannel} = require('./Functionality/createChannel')
 const {help} = require('./Functionality/help')
+
+const {createChannel} = require('./Functionality/createChannel')
+const {deleteChannel} = require('./Functionality/deleteChannel')
+
 
 //CREATE A NEW DISCORD CLIENT
 const client = new Discord.Client();
@@ -55,13 +58,21 @@ client.on('message', msg => {
     }
 
     /**
-     * Create new voice/text channel
+     * Create new voice/text channel, category
      */
     if (msg.content.startsWith(`${prefix}create`)) {
         createChannel(msg);
     }
 
-    //help - link to website
+    /**
+     * Delete voice/text channel, category
+     */
+    if (msg.content.startsWith(`${prefix}delete`)) {
+        deleteChannel(msg);
+    }
+
+    //TODO: help - link to website
+    //TODO: copy channel IMPORTANT
     //disconnect user from channel
     //ban user
     //kick user
@@ -91,13 +102,6 @@ client.on('message', msg => {
 
         //TODO: CHECK UPRAWNIENIA DO BANOWANIA
 
-        // try{
-        //     if(user.user.username === "Jakub Radzik"){
-        //         user = msg.author;
-        //     }
-        // }catch (e) {
-        //     console.log(e);
-        // }
 
         if (user) {
             const member = msg.guild.members.resolve(user);
@@ -127,6 +131,7 @@ client.on('message', msg => {
             },100))
         }
     }
+
 });
 
 //LOGIN CLIENT USING TOKEN

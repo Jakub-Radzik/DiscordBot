@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="Creating voice/text channels and categories, also more than one channel using one command">
+    <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="Help command">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functionality/welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/welcome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/createChannel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/createChannel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/help.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +56,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.index.js">
-    <configuration name="BotKey.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BotKey.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Environment.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Environment.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
@@ -63,9 +65,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.BotKey.js" />
+        <item itemvalue="Node.js.Environment.js" />
         <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.BotKey.js" />
+        <item itemvalue="Node.js.Environment.js" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +83,8 @@
       <workItem from="1619787459747" duration="704000" />
       <workItem from="1619803202949" duration="743000" />
       <workItem from="1619900935284" duration="4126000" />
-      <workItem from="1620032140914" duration="6051000" />
+      <workItem from="1620032140914" duration="6099000" />
+      <workItem from="1620224110888" duration="5057000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1619702548466</created>
@@ -118,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620035145686</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Help command">
+      <created>1620038427603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620038427603</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +152,7 @@
     <MESSAGE value="Hello Bot" />
     <MESSAGE value="Information about bot card, send on command and guild join" />
     <MESSAGE value="Creating voice/text channels and categories, also more than one channel using one command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating voice/text channels and categories, also more than one channel using one command" />
+    <MESSAGE value="Help command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Help command" />
   </component>
 </project>

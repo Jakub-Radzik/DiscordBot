@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const {name, version} = require('../package.json');
-const {prefix} = require('../BotKey')
+const {prefix} = require('../Environment')
 
 const helpEmbed = new Discord.MessageEmbed()
     .setColor('#00ccff')

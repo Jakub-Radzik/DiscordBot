@@ -25,6 +25,8 @@ function createChannel(msg){
             })
         }
     }
+
+    msg.reply("Operation is done");
 }
 
 module.exports={createChannel}
