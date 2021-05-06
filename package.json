@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/radzikoska123/DiscordBot#readme",
   "dependencies": {
+    "discord-backup": "^2.5.0",
+    "discord-backup-system": "^1.1.0",
     "discord.js": "^12.5.3"
   }
 }

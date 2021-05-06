@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="Help command">
+      <change afterPath="$PROJECT_DIR$/Functionalities Another but works/backup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functionality/createChannel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/createChannel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functionality/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/help.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.43" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Functionalities Another but works" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,27 +50,40 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\jakub\Desktop\DiscordBot\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jakub\Desktop\DiscordBot\Functionalities Another but works" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jakub\Desktop\DiscordBot\images" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.index.js">
-    <configuration name="Environment.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Environment.js" working-dir="$PROJECT_DIR$">
+    <configuration name="backup.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Functionality/backup.js" working-dir="$PROJECT_DIR$/Functionality">
       <method v="2" />
     </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Functionality/test.js" working-dir="$PROJECT_DIR$/Functionality">
+      <method v="2" />
+    </configuration>
+    <configuration name="tt.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Functionality/tt.js" working-dir="$PROJECT_DIR$/Functionality">
+      <method v="2" />
+    </configuration>
+    <configuration name="ttt.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Functionality/ttt.js" working-dir="$PROJECT_DIR$/Functionality">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.Environment.js" />
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.Environment.js" />
+        <item itemvalue="Node.js.tt.js" />
+        <item itemvalue="Node.js.ttt.js" />
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.backup.js" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +100,10 @@
       <workItem from="1619803202949" duration="743000" />
       <workItem from="1619900935284" duration="4126000" />
       <workItem from="1620032140914" duration="6099000" />
-      <workItem from="1620224110888" duration="5057000" />
+      <workItem from="1620224110888" duration="5108000" />
+      <workItem from="1620292664878" duration="2649000" />
+      <workItem from="1620296619453" duration="1313000" />
+      <workItem from="1620302647784" duration="4379000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1619702548466</created>
@@ -128,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620038427603</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Delete channels">
+      <created>1620229226911</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620229226911</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +179,7 @@
     <MESSAGE value="Information about bot card, send on command and guild join" />
     <MESSAGE value="Creating voice/text channels and categories, also more than one channel using one command" />
     <MESSAGE value="Help command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Help command" />
+    <MESSAGE value="Delete channels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete channels" />
   </component>
 </project>

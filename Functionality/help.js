@@ -18,6 +18,7 @@ const helpEmbed = new Discord.MessageEmbed()
         {name: '\u200B', value: '\u200B'},
         {name: '**MENAGEMENT**', value: 'Channels, categories menagement commands'},
         {name: `\`${prefix}create {type} {names,}\``, value: 'Create text/voice channels or categories'},
+        {name: `\`${prefix}delete {type} {names,}\``, value: 'Delete text/voice channels or categories'},
         {name: '\u200B', value: '\u200B'},
         {name: '**JOKES**', value: 'Some jokes on your mates'},
         {name: `\`${prefix}kicker @mention\``, value: 'Move your friend around all voice channels in your guild, works only on connected users'},

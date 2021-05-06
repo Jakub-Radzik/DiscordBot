@@ -9,7 +9,7 @@ const {help} = require('./Functionality/help')
 
 const {createChannel} = require('./Functionality/createChannel')
 const {deleteChannel} = require('./Functionality/deleteChannel')
-
+const {saveBackupGuild, loadBackupGuild} = require("./Functionality/backup");
 
 //CREATE A NEW DISCORD CLIENT
 const client = new Discord.Client();
@@ -72,7 +72,21 @@ client.on('message', msg => {
     }
 
     //TODO: help - link to website
-    //TODO: copy channel IMPORTANT
+
+    /**
+     * Make a backup
+     */
+    if(msg.content === `${prefix}backup`){
+        saveBackupGuild(msg);
+    }
+
+    /**
+     * Load a backup
+     */
+    if(msg.content.startsWith(`${prefix}load`)){
+        loadBackupGuild(msg);
+    }
+
     //disconnect user from channel
     //ban user
     //kick user
