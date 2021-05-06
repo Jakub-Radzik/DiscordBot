@@ -12,14 +12,24 @@ const helpEmbed = new Discord.MessageEmbed()
     .setThumbnail('attachment://bot_avatar.png')
     .addFields(
         {name: '\u200B', value: '\u200B'},
+
         {name: '**OVERVIEW**', value: 'Information commands'},
         {name: `\`${prefix}help\``, value: 'Show help'},
         {name: `\`${prefix}welcome\``, value: 'Show information about bot and author'},
         {name: '\u200B', value: '\u200B'},
+
+        {name: '**BACKUP**', value: 'Information commands'},
+        {name: `\`${prefix}backup\``, value: 'Create server backup'},
+        {name: `\`${prefix}load {id}\``, value: 'Load backup by id'},
+        {name: '\u200B', value: '\u200B'},
+
         {name: '**MENAGEMENT**', value: 'Channels, categories menagement commands'},
         {name: `\`${prefix}create {type} {names,}\``, value: 'Create text/voice channels or categories'},
         {name: `\`${prefix}delete {type} {names,}\``, value: 'Delete text/voice channels or categories'},
+        {name: `\`${prefix}ban @mention\``, value: 'Ban user from the server'},
+        {name: `\`${prefix}kick @mention\``, value: 'Kick user from the server'},
         {name: '\u200B', value: '\u200B'},
+
         {name: '**JOKES**', value: 'Some jokes on your mates'},
         {name: `\`${prefix}kicker @mention\``, value: 'Move your friend around all voice channels in your guild, works only on connected users'},
         {name: '\u200B', value: '\u200B'},

@@ -1,6 +1,6 @@
 {
   "name": "Guard Bot",
-  "version": "1.0.1",
+  "version": "1.5.0",
   "description": "DiscordBot",
   "main": "index.js",
   "scripts": {

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284e557d-5f85-488f-b3fa-c3251ea62efc" name="Default Changelist" comment="Help command">
-      <change afterPath="$PROJECT_DIR$/Functionalities Another but works/backup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functionality/ban.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/backup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/backup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/createChannel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/createChannel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/deleteChannel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/deleteChannel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functionality/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/Functionality/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functionality/tt.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +105,8 @@
       <workItem from="1620224110888" duration="5108000" />
       <workItem from="1620292664878" duration="2649000" />
       <workItem from="1620296619453" duration="1313000" />
-      <workItem from="1620302647784" duration="4379000" />
+      <workItem from="1620302647784" duration="4801000" />
+      <workItem from="1620308776759" duration="2119000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1619702548466</created>
@@ -154,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620229226911</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="backup server">
+      <created>1620307118883</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620307118883</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +190,7 @@
     <MESSAGE value="Creating voice/text channels and categories, also more than one channel using one command" />
     <MESSAGE value="Help command" />
     <MESSAGE value="Delete channels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete channels" />
+    <MESSAGE value="backup server" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup server" />
   </component>
 </project>

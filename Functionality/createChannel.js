@@ -2,6 +2,10 @@ function createChannel(msg){
 
     let splitmsg = msg.content.split(' ');
 
+    if(!msg.member.hasPermission("MANAGE_CHANNELS")){
+        return msg.channel.send(":x: | You don't have permissions!");
+    }
+
     let type = splitmsg[1];
     if( type!=='voice' &&  type!=='text' && type!=='category' ){
         msg.channel.send(`I cannot create channel of type: ${type}. Use [text / voice / category] instead. `)

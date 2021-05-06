@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const {kicker} = require("./Functionality/kicker");
 const {TOKEN, prefix} = require('./Environment');
 
 /**
@@ -10,6 +11,7 @@ const {help} = require('./Functionality/help')
 const {createChannel} = require('./Functionality/createChannel')
 const {deleteChannel} = require('./Functionality/deleteChannel')
 const {saveBackupGuild, loadBackupGuild} = require("./Functionality/backup");
+const {kick, ban} = require("./Functionality/kick");
 
 //CREATE A NEW DISCORD CLIENT
 const client = new Discord.Client();
@@ -46,6 +48,8 @@ client.on('message', msg => {
     /**
      * Help card
      */
+
+    //TODO: help - link to website
     if(msg.content === `${prefix}help`){
         help(msg);
     }
@@ -71,8 +75,6 @@ client.on('message', msg => {
         deleteChannel(msg);
     }
 
-    //TODO: help - link to website
-
     /**
      * Make a backup
      */
@@ -87,64 +89,35 @@ client.on('message', msg => {
         loadBackupGuild(msg);
     }
 
+    /**
+     * Kick user from the server
+     */
+    if(msg.content.startsWith(`${prefix}kick`)){
+        kick(msg);
+    }
+
+    /**
+     * Ban user from the server
+     */
+    if(msg.content.startsWith(`${prefix}ban`)){
+        ban(msg);
+    }
+
+    /**
+     * Move user around channels
+     */
+    if (msg.content.startsWith(`${prefix}kicker`)) {
+        kicker(msg);
+    }
+
+
+
     //disconnect user from channel
-    //ban user
-    //kick user
     //send info about user
-
-    if (msg.content.startsWith("kick")) {
-        let user = msg.mentions.members.first();
-
-        if (user) {
-            const member = msg.guild.members.resolve(user);
-            member.kick().then((member) => {
-                msg.channel.send('Sectum Sempra !!!', {
-                    files: [
-                        "./sectumSempra.gif"
-                    ]
-                });
-                msg.channel.send(":wave: " + member.displayName + " został wyrzucony :point_right: ");
-            }).catch(() => {
-                msg.channel.send("I do not have permissions to do this");
-            });
-        }
-    }
-
-    if (msg.content.startsWith("ban")) {
-        let user = msg.mentions.members.first();
-
-
-        //TODO: CHECK UPRAWNIENIA DO BANOWANIA
-
-
-        if (user) {
-            const member = msg.guild.members.resolve(user);
-            member.ban().then((member) => {
-                msg.channel.send('Avada Kedavra !!!', {
-                    files: [
-                        "./avadaKedavra.gif"
-                    ]
-                });
-                msg.channel.send(":wave: " + member.displayName + " został zbanowany :point_right: ");
-            }).catch(() => {
-                msg.channel.send("I do not have permissions to do this");
-            });
-        }
-    }
-
     //meme api
     //joke -move user around voice channels
-    if (msg.content.startsWith("kicker")) {
-        const user = msg.mentions.members.first();
-        let voiceChannels = msg.guild.channels.cache.filter(c => c.type === 'voice');
-        let channelsLength = voiceChannels.size;
-        if (user) {
-            const member = msg.guild.members.resolve(user);
-            voiceChannels.each(channel => setTimeout(() => {
-                member.voice.setChannel(channel);
-            },100))
-        }
-    }
+
+
 
 });
 
